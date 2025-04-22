@@ -1,8 +1,10 @@
+// Crear Listener para activar funcion de modo oscuro.
 
 document.getElementById("darkmode").addEventListener("click", function() {
     var body = document.body;
     var section1 = document.getElementById("acerca-de");
     var section2 = document.getElementById("proyectos");
+    var section3 = document.getElementById("contacto");
     var header = document.getElementById("headers");
     var button = document.getElementById("darkmode");
 
@@ -11,6 +13,7 @@ document.getElementById("darkmode").addEventListener("click", function() {
     body.classList.toggle("dark-mode");
     section1.classList.toggle("dark-mode");
     section2.classList.toggle("dark-mode");
+    section3.classList.toggle("dark-mode");
 });
 
 
