@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <title>Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
+
     </head>
 
     <body>
-        <header>
+        <header id="headers">
+            <button id="darkmode">🌘︎</button>
             <h1>Portfolio personal</h1>
             <nav>
                 <ul>
                     <li><a href="#acerca-de">Acerca de</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#Extra">Extra</a></li>
                     <li style="float: right;"><a href="https://github.com/nriquelme-uct/portfolio" target="__blank">Repo</a></li>
                 </ul>
             </nav>
@@ -24,23 +25,28 @@
         
         <main>
             <section id="acerca-de">
-                <h2>Acerca de</h2>
                 <div class="container">
-                    <div id="imgcontainer">
-                        <img src="assets/img/brunhidlde.jpg" alt="Foto de perfil" id="profile-pic">
+                    <div class="content" id="imgcontainer">
+                        <img src="assets/img/brunhidlde.jpg" alt="Foto de Perfil de Nicolás Riquelme " id="profile-pic">
+                    </div>
+                    <div class="content" id="presentacion">
+                        <h2>Acerca de</h2>
+                        <p>Mi nombre es Nicolás Riquelme. Me agradan varias cosas. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Praesent velit orci, dapibus in ligula vitae, congue lobortis risus. 
+                            Nam pharetra erat vel sapien accumsan accumsan eu at lacus. In tincidunt, ipsum non convallis 
+                            tincidunt, dolor mauris dignissim ex, quis rutrum turpis arcu eget dolor. Mauris tempus euismod metus at congue.</p>
                     </div>
                     <div class="content">
-                        <p>Mi nombre es Nicolás Riquelme. Me agradan varias cosas. </p>
-                        <h3>Competencias:</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>C# (no se que mas poner si no se js aun)</li>
-                            <li>Python</li>
-                        </ul>
+                            <h3>Competencias:</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                            </ul>
                     </div>
                 </div>
-                
             </section>
 
             <section id="proyectos">
@@ -51,27 +57,44 @@
                         <p><a href="https://github.com/nriquelme-uct/el-liberty-tree" target="_blank">Mock-up de periódico online</a></p>
                     </div>
                     <div class="proyecto">
-                        <img src="assets/img/Gibd6H_WIAAx-Wx.jpg" alt="Icono de placeholder" class="project-icon">
+                        <img src="assets/img/Gibd6H_WIAAx-Wx.jpg" alt="Proyecto de Web Personal." class="project-icon">
                         <p><a href="https://github.com/nriquelme-uct/Web-Personal" target="_blank">Web personal (en progreso aún)</a></p>
+                    </div>
+                    <div class="proyecto">
+                        <img src="assets/img/calculator-2374442_640.png" alt="Proyecto de Calculadora JS" class="project-icon">
+                        <p><a href="https://github.com/nriquelme-uct/js-calculator" target="_blank">Calculadora JS</a></p>
                     </div>
                 </div>
             </section>
 
             <section id="contacto">
-                <h2>Contactos</h2>
-                <p>Email: <a href="mailto:nicodn2003@gmail.com">nicodn2003@gmail.com</a></p>
-                <aside class="social">
-                    <a href="https://github.com/nriquelme-uct/" target="_blank">GitHub</a> |
-                    <a href="https://instagram.com" target="_blank">Instagram</a> |
-                    <a href="https://youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" id="rickroll">No pinchar.</a>
-                </aside>
+                <h2>Formulario de email</h2>
+                <div class="email-container">
+                    <form method="POST" id="form">
 
+                        <input type="hidden" name="access_key" value="a7cc4fe3-966e-420a-ab3c-e857c89d6c9d">
+                        
+                        <label for="form-name">Nombre:</label>
+                        <input id="form-name" type="text" name="name" required>
+                        <label for="form-mail">Email:</label>
+                        <input id="form-mail" type="email" name="email" required>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Enviar por correo</button>
+                        <div id="result"></div>
+                    
+                    </form>
+                </div>
             </section>
-        </main>
-        
-        <footer>
 
-        </footer>
-        <script src="" async defer></script>
+            <footer>
+                    <h2>Redes sociales</h2>
+                    <div class="social">
+                        <a href="https://github.com/nriquelme-uct/" target="_blank">GitHub</a> |
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                    </div>
+            </footer>
+        </main>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
